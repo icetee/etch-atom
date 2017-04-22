@@ -67,3 +67,7 @@ export function deactivate () {
 ```
 
 See the `example` directory for a more complete example.
+
+# Events
+
+To help you handle events (bind them automatically to `this`), you can use 

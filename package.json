@@ -3,13 +3,25 @@
   "main": "./example/atom-ui",
   "version": "0.0.0",
   "description": "UI toolkit for Atom based on etch",
-  "keywords": [ "etch", "atom" ],
+  "keywords": [
+    "etch",
+    "atom"
+  ],
   "repository": "https://github.com/Bat41/atom-ui",
   "license": "MIT",
+  "scripts": {
+    "build": "babel lib --presets react,env --out-dir dist",
+    "prepublish": "npm run build"
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
     "etch": "^0.12.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1"
   }
 }
