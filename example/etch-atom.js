@@ -5,11 +5,11 @@
 import { CompositeDisposable } from 'atom'
 import etch from 'etch'
 
-import { EtchComponent, Icon, InputView, Editor, BackgroundMessage, Tree, TreeView, TabView } from '../lib/atom-ui'
+import { EtchComponent, Icon, InputView, Editor, BackgroundMessage, Tree, TreeView, TabView } from '../lib/etch-atom'
 
 class Demo extends TabView {
   constructor (state) {
-    super({ state, title: 'Atom UI Demo', icon: 'beaker' }, { events: ['editorChanged', 'itemClicked'] })
+    super({ state, title: 'etch-atom Demo', icon: 'beaker' }, { events: ['editorChanged', 'itemClicked'] })
   }
 
   editorChanged () {
@@ -32,7 +32,7 @@ class Demo extends TabView {
       </Editor>
       <TreeView>
         <Tree icon='rss' text='New articles'>
-          <Tree icon='book' on={{ click: this.itemClicked }} text={<strong>Atom UI 0.1.0 released</strong>}/>
+          <Tree icon='book' on={{ click: this.itemClicked }} text={<strong>etch-atom 0.1.0 released</strong>}/>
           <Tree icon='book' on={{ click: this.itemClicked }} text={<strong>Photos of my cat</strong>}/>
           <Tree icon='playback-play'text='Videos'>
             <Tree text='LOLCATS'/>
@@ -47,8 +47,8 @@ const subscriptions = new CompositeDisposable()
 
 export function activate (state) {
   subscriptions.add(atom.commands.add('atom-workspace', {
-    'atom-ui:demo': () => demo(),
-    'atom-ui:input-demo': () => inputDemo()
+    'etch-atom:demo': () => demo(),
+    'etch-atom:input-demo': () => inputDemo()
   }))
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "etch-atom-example",
-  "main": "./atom-ui",
+  "main": "./etch-atom",
   "version": "0.0.0",
   "description": "Example package using etch-atom",
   "keywords": [
