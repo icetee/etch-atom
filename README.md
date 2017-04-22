@@ -13,7 +13,7 @@ We provide these components:
 - InputView, a modal dialog for the user to type something, with validation
 - TabView, a useful base component for views which are displayed into a tab
 
-There is also a
+There is also an `EtchComponent` class, which act as a base to create your own components.
 
 ## Example
 
@@ -70,4 +70,22 @@ See the `example` directory for a more complete example.
 
 # Events
 
-To help you handle events (bind them automatically to `this`), you can use 
+To help you handle events (bind them automatically to `this`), you can use the `events` option of the `EtchComponent`'s constructor.
+
+```js
+class MyComponent extends EtchComponent {
+  constructor (props, children) {
+    super(props, children, { events: [ this.onClick ] })
+    this.name = 'world'
+  }
+
+  onClick () {
+    // You can use `this` here
+    console.log(`Hello, ${this.name}!`)
+  }
+
+  render () {
+    return <button on={{ click: this.onClick }}>Click me!</button>
+  }
+}
+```
