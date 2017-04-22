@@ -1,7 +1,7 @@
 {
-  "name": "atom-ui",
+  "name": "etch-atom",
   "main": "./lib/etch-atom",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "UI toolkit for Atom based on etch",
   "keywords": [
     "etch",
