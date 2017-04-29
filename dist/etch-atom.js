@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+require('babel-polyfill');
+
 var _backgroundMessage = require('./background-message');
 
 var _editor = require('./editor');
