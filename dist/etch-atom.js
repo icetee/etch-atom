@@ -6,8 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Tree = exports.TreeView = exports.TabView = exports.InputView = exports.Icon = exports.EtchComponent = exports.Editor = exports.BackgroundMessage = undefined;
 
-require('babel-polyfill');
-
 var _backgroundMessage = require('./background-message');
 
 var _editor = require('./editor');
