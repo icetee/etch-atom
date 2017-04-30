@@ -4,6 +4,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Tree = exports.TreeView = exports.TabView = exports.InputView = exports.Icon = exports.EtchComponent = exports.Editor = exports.BackgroundMessage = undefined;
 
 require('babel-polyfill');
 
@@ -23,13 +24,11 @@ var _treeView = require('./tree-view');
 
 var _tree = require('./tree');
 
-exports.default = {
-  BackgroundMessage: _backgroundMessage.BackgroundMessage,
-  Editor: _editor.Editor,
-  EtchComponent: _etchComponent.EtchComponent,
-  Icon: _icon.Icon,
-  InputView: _inputView.InputView,
-  TabView: _tabView.TabView,
-  TreeView: _treeView.TreeView,
-  Tree: _tree.Tree
-};
+exports.BackgroundMessage = _backgroundMessage.BackgroundMessage;
+exports.Editor = _editor.Editor;
+exports.EtchComponent = _etchComponent.EtchComponent;
+exports.Icon = _icon.Icon;
+exports.InputView = _inputView.InputView;
+exports.TabView = _tabView.TabView;
+exports.TreeView = _treeView.TreeView;
+exports.Tree = _tree.Tree;
