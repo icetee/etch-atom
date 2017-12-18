@@ -21,7 +21,7 @@ class Demo extends TabView {
   }
 
   render () {
-    return <div class='block'>
+    return <div className='block'>
       <Icon name='bell' size='medium'/>
       <Editor ref='editor' mini={true} on={{didStopChanging: this.editorChanged}}>
         foo bar!
